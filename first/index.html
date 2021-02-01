@@ -65,9 +65,14 @@
                 <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Register Now!</a> &nbsp; <a href="#one" class="btn btn-primary btn-xl page-scroll">Join Our Discord</a>
             </div>
         </div>
-        <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="https://s3-us-west-2.amazonaws.com/coverr/poster/Traffic-blurred2.jpg" id="video-background">
+        <!-- <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="https://s3-us-west-2.amazonaws.com/coverr/poster/Traffic-blurred2.jpg" id="video-background">
             <source src="https://s3-us-west-2.amazonaws.com/coverr/mp4/Traffic-blurred2.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
-        </video>
+        </video> -->
+        <div class="video-background">
+            <div class="video-foreground">
+                <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
     </header>
     <section class="bg-primary" id="one">
         <div class="container">
@@ -118,7 +123,7 @@
             </div>
         </div>
     </section>
-    <section id="three" class="no-padding">
+    <!-- <section id="three" class="no-padding">
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
@@ -195,24 +200,28 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="container-fluid" id="four">
-        <li>The flag format is VishwaCTF{}, unless specified otherwise.</li>
-        <br>
-        <li>Attacking the web server is strictly prohibited and will get you disqualified.</li>
-        <br>
-        <li> Brute forcing flags on this platform is not allowed and will not lead to success.</li>
-        <br>
-        <li>Any questions regarding challenges or the platform should be asked via our Discord server.</li>
-        <br>
-        <li>The competition will be over on XYZ IST but the challenges will be online for the following 2-3 days afterwards.
-        </li>
-        <br>
-        <li>Teams of minimun 1 and maximum 4 members are allowed</li>
-        <br>
-        <li>There is no restriction so as to who can participate in the CTF</li>
-        <br>
+
+        <div class="rules">
+            <h1>Rules</h1>
+            <li>The flag format is VishwaCTF{}, unless specified otherwise.</li>
+            <br>
+            <li>Attacking the web server is strictly prohibited and will get you disqualified.</li>
+            <br>
+            <li> Brute forcing flags on this platform is not allowed and will not lead to success.</li>
+            <br>
+            <li>Any questions regarding challenges or the platform should be asked via our Discord server.</li>
+            <br>
+            <li>The competition will be over on XYZ IST but the challenges will be online for the following 2-3 days afterwards.
+            </li>
+            <br>
+            <li>Teams of minimun 1 and maximum 4 members are allowed</li>
+            <br>
+            <li>There is no restriction so as to who can participate in the CTF</li>
+            <br>
+        </div>
         <!-- <div class="row">
             <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
                 <h2 class="text-center text-primary">Features</h2>
