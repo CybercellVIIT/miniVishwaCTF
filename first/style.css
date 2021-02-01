@@ -524,7 +524,11 @@ h1 {
     text-shadow: 1px 1px 2px #082b34;
 }
 
-* {
+
+/* for video background, doesnt work */
+
+
+/* * {
     box-sizing: border-box;
 }
 
@@ -575,4 +579,4 @@ h1 {
     .vid-info .acronym {
         display: none;
     }
-}
+} */
