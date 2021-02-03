@@ -27,28 +27,35 @@
 //         $('.navbar-toggle:visible').click();
 //     });
 
-//     $('#galleryModal').on('show.bs.modal', function (e) {
-//        $('#galleryImage').attr("src",$(e.relatedTarget).data("src"));
+//     $('#galleryModal').on('show.bs.modal', function(e) {
+//         $('#galleryImage').attr("src", $(e.relatedTarget).data("src"));
 //     });
 
-// })(jQuery);
+//})(jQuery);
 
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
+const questions = document.getElementsByClassName('accordion-title') //Gets all the questions (plus icon)
 
-// Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-    target: '.navbar-fixed-top'
-})
+for (const question of questions) {
+    const answer = question.parentElement.querySelector('.accordion-content')
+    const remove = question.parentElement.querySelector(".remove")
+    const add = question.parentElement.querySelector(".add")
+    let open = false //Variable to check if the answer is visible or not
 
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
-});
+    function openAnswer() {
+        if (open == true) { //If you click the question while the answer is visible it will stop being visible and open will change it's value to false
+            add.style.display = "block";
+            remove.style.display = "none";
+            answer.style.overflow = "hidden";
+            answer.style.maxHeight = '0';
+            open = false;
+        } else { //If you click the question while the answer is not visible it will start being visible and open will change it's value to true
+            add.style.display = "none";
+            remove.style.display = "block";
+            answer.style.maxHeight = "300px";
+            answer.style.overflow = "visible";
+            open = true;
+        }
+    }
+
+    question.addEventListener('click', openAnswer)
+}
