@@ -1311,7 +1311,7 @@ body {
   font-family: Roboto;
 } */
 
-section {
+/* section {
   width: 100%;
   display: inline-block;
   background: #ccc;
@@ -1320,7 +1320,7 @@ section {
   font-size: 22px;
   font-weight: 700;
   text-decoration: underline;
-}
+} */
 
 .footer-distributed {
   background-color: #292c2f;
