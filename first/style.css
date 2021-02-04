@@ -1060,249 +1060,71 @@ For small devices*/
     }
 }
 
-.Accordion {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    &__tabs {
-        max-width: 600px;
-        list-style: none;
-    }
-    &__tab {
-        width: 100%;
-        &__headline {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid rgba(#F8F8F8, 0.5);
-            transition: 0.2s ease all;
-            padding: 20px 15px;
-            cursor: pointer;
-            font-weight: 400;
-            &:hover {
-                background-color: #607bba;
-            }
-            >h4 {
-                user-select: none;
-                text-transform: uppercase;
-                margin: 0;
-            }
-            .icon {
-                display: inline-block;
-                width: 22px;
-                height: 22px;
-                border: 1px solid;
-                border-radius: 22px;
-                position: relative;
-                &::before {
-                    display: block;
-                    position: absolute;
-                    content: "";
-                    top: 10px;
-                    left: 6px;
-                    width: 10px;
-                    height: 2px;
-                    background: currentColor;
-                }
-                &::after {
-                    display: block;
-                    position: absolute;
-                    content: "";
-                    top: 6px;
-                    left: 10px;
-                    width: 2px;
-                    height: 10px;
-                    background: currentColor;
-                    transition: 0.2s ease all;
-                }
-            }
-        }
-        &__content {
-            overflow: hidden;
-            padding: 0px 15px;
-            box-sizing: border-box;
-            height: 100%;
-            max-height: 0;
-            transition: 0.4s ease all;
-        }
-        &--open {
-            .Accordion__tab {
-                &__headline {
-                    .icon::after {
-                        transform: scaleY(0);
-                    }
-                }
-            }
-        }
-    }
-}
 
 
 /*FAQ section, where the accordion is kept, including section specific css*/
 h1#footer{
     text-align: center;
 }
-#faq {
+/* #faq {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     min-height: 100vh;
-}
+} */
 
-#faq .add {
-    /*Add is the name for the plus icon*/
+/* #faq .add {
+   
     display: block;
-}
+} */
 
-#faq .remove {
-    /*Remove is the name for the less icon*/
+/* #faq .remove {
+  
     display: none;
 }
 
 #faq i {
     font-size: 30px;
-}
-
+} */
 
 /*Accordion container and each item*/
-
 .accordion {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-}
-
-.accordion-item {
-    background-color: transparent;
-    border-bottom: 3px solid #ff6666;
-    margin-bottom: 10px;
-    padding: 10px;
-}
-
-
-/*Styles for the question*/
-
-.accordion-title {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    width: 100%;
-    padding: 1rem 0;
+    background-color: #eee;
+    color: #444;
     cursor: pointer;
-    transition-duration: 0.5s;
-}
-
-.accordion-title:hover {
-    color: #ff6666;
-}
-
-.accordion-title h2 {
-    width: 80%;
-}
-
-
-/*Styles for the answer*/
-
-.accordion-content {
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
     max-height: 0;
     overflow: hidden;
-    position: relative;
-    background-color: #ff6666;
-    transition: max-height 0.6s;
-    font-family: Open Sans;
-    font-weight: 400;
-}
-
-.accordion-content p {
-    padding: 20px;
-    color: white;
-}
-
-.accordion>input[type="checkbox"] {
-    position: absolute;
-    left: -100vw;
-}
-
-.accordion .content {
-    overflow-y: hidden;
-    height: 0;
-    transition: height 0.3s ease;
-}
-
-.accordion>input[type="checkbox"]:checked~.content {
-    height: auto;
-    overflow: visible;
-}
-
-.accordion label {
-    display: block;
-}
-
-
-/*
-   Styling
-  */
-
-body {
-    font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
-    color: #fff;
-    font-weight: 300;
-}
-
-.accordion {
-    margin-bottom: 1em;
-}
-
-.accordion>input[type="checkbox"]:checked~.content {
-    padding: 15px;
-    border: 1px solid #e8e8e8;
-    border-top: 0;
-}
-
-.accordion .handle {
-    margin: 0;
-    font-size: 1.125em;
-    line-height: 1.2em;
-}
-
-.accordion label {
-    color: #fff;
-    cursor: pointer;
-    font-weight: normal;
-    padding: 15px;
-    background: #e8e8e8;
-}
-
-.accordion label:hover,
-.accordion label:focus {
-    background: #d8d8d8;
-}
-
-.accordion .handle label:before {
-    font-family: 'fontawesome';
-    content: "\f054";
-    display: inline-block;
-    margin-right: 10px;
-    font-size: .58em;
-    line-height: 1.556em;
-    vertical-align: middle;
-}
-
-.accordion>input[type="checkbox"]:checked~.handle label:before {
-    content: "\f078";
-}
-
-.accordion {
-    max-width: 65em;
-}
-
-.accordion p:last-child {
-    margin-bottom: 0;
-}
+    transition: max-height 0.2s ease-out;
+  }
 
 /* footer */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
