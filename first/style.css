@@ -332,7 +332,7 @@ header {
     color: #fff;
     width: 100%;
     background-color: #0f0f0f;
-    background-image: url('https://splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-Slate-Stone-Xeromatic-1440x953.jpg');
+    /* background-image: url('https://splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-Slate-Stone-Xeromatic-1440x953.jpg'); */
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -360,20 +360,8 @@ header .header-content .inner p {
     color: rgba(255, 255, 255, 0.7);
 }
 
-#video-background {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 1;
-}
 
-#video-background.collapsing {
-    display: none;
-}
+
 
 footer {
     background-color: #2d2d2d;
@@ -1303,3 +1291,7 @@ p#footer{
         display: none;
     }
 } */
+
+.vid{
+    width: 50%;
+}
