@@ -1041,6 +1041,8 @@ h1#footer {
     .vid {
         width: 85% !important;
         height: 100vh !important;
+        display:none;
+        background-color: #0f0f0f;
     }
     .bothButtons{
         margin-top: 50px;
@@ -1049,7 +1051,7 @@ h1#footer {
         margin-top: 50px;
     }
     .header-content{
-        position:absolute !important;
+        position:relative !important;
         padding: 100px 15px 0px 15px !important ;
     }
     .firstHr{
@@ -1064,7 +1066,10 @@ h1#footer {
         margin: 10px 20px 10px 20px;
         padding: 10px;
     }
-
+    header{
+        background: none;
+        background-color: #0f0f0f;
+    }
 }
 
 p#footer {
@@ -1087,13 +1092,11 @@ p#footer {
         height: 100%;
     }
 }
-@media (max-width: 767px) {
-    #vid {
-        display: none;
-    }
+@media (max-width: 560px) {
+    
     
     header {
-        background: url('thumbnail.png');
+        /* background: url('thumbnail.png'); */
         background-size: cover;
     }
 }
