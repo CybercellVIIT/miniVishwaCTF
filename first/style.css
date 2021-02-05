@@ -53,7 +53,7 @@
     h6 {
         font-family: 'Questrial', 'Helvetica Neue', Arial, sans-serif;
         text-align: center;
-        color: rgb(214, 83, 83);
+        color: rgba(170, 25, 25, 0.815);
         font-weight: 700;
         text-shadow: #082b34;
     }
@@ -118,14 +118,6 @@
     .no-padding {
         padding: 0;
     }
-    /* video {
-    object-fit: cover;
-    width: 100vw;
-    height: 90vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-  } */
     
     #first {
         background-color: black;
