@@ -1010,7 +1010,7 @@ h1#footer {
 }
 
 /* Media Queries */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .footer-distributed .footer-left,
     .footer-distributed .footer-right {
         text-align: center;
@@ -1024,15 +1024,57 @@ h1#footer {
     .footer-distributed .footer-left p.footer-links {
         line-height: 1.8;
     }
+} */
+
+@media (max-width: 600px) {
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right {
+        text-align: center;
+    }
+    .footer-distributed .footer-right {
+        float: none;
+        margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+        line-height: 1.8;
+    }
+    .vid {
+        width: 85% !important;
+        height: 100vh !important;
+    }
+    .bothButtons{
+        margin-top: 50px;
+    }
+    #bg-vid{
+        margin-top: 50px;
+    }
+    .header-content{
+        position:absolute !important;
+        padding: 100px 15px 0px 15px !important ;
+    }
+    .firstHr{
+        display: none;
+    }
+    /* remove this after adding logo */
+    .cursive{
+        font-size: 45px;
+    }
+
+    .registerNow{
+        margin: 10px 20px 10px 20px;
+        padding: 10px;
+    }
+
 }
+
 p#footer {
     text-align: center;
 }
-.vid {
+/* .vid {
     width: 50%;
     height: auto;
     opacity: 70%;
-}
+} */
 @media (min-aspect-ratio: 16/9) {
     #vid {
         max-width: 100%;
