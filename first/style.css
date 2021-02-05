@@ -216,6 +216,17 @@ header {
     background-size: cover;
     -o-background-size: cover;
 }
+.cyber {
+    width: 150px;
+    height: auto;
+    float: left;
+    margin-top: 100px;
+}
+.presents {
+    margin-top: 150px;
+    float: left;
+    font-size: x-large;
+}
 .responsive {
     width: 100%;
     height: auto;
@@ -891,14 +902,14 @@ h1#footer {
 /*Accordion container and each item*/
 .accordion {
     background-color: rgb(250, 169, 169);
-    color: rgb(170, 126, 126);
+    color: rgb(9, 160, 140);
     cursor: pointer;
     padding: 18px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 25px;
     transition: 0.4s;
 }
 .active,
@@ -1010,6 +1021,7 @@ p#footer {
 }
 .vid {
     width: 50%;
+    height: auto;
     opacity: 70%;
 }
 
