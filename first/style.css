@@ -219,13 +219,13 @@ header {
 .cyber {
     width: 150px;
     height: auto;
-    float: left;
+    float: center;
     margin-top: 100px;
 }
 .presents {
-    margin-top: 150px;
-    float: left;
-    font-size: x-large;
+    float: center;
+    font-size: xx-large;
+    color: #ffffff;
 }
 .responsive {
     width: 100%;
