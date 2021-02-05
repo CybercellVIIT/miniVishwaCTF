@@ -232,7 +232,7 @@
     }
     
     header .header-content {
-        position: relative;
+        position: absolute;
         width: 100%;
         padding: 100px 15px;
         text-align: center;
@@ -1083,12 +1083,38 @@ For small devices*/
         .footer-distributed .footer-left p.footer-links {
             line-height: 1.8;
         }
+        .vid {
+            width: 85% !important;
+            height: 70vh !important;
+        }
+        .bothButtons{
+            margin-top: 50px;
+        }
+        #bg-vid{
+            margin-top: 50px;
+        }
+        .header-content{
+            padding: 100px 15px 0px 15px !important ;
+        }
+        .firstHr{
+            display: none;
+        }
+        /* remove this after adding logo */
+        .cursive{
+            font-size: 45px;
+        }
+
+        .registerNow{
+            margin: 10px 20px 10px 20px;
+            padding: 10px;
+        }
+    
     }
     
     p#footer {
         text-align: center;
     }
     
-    .vid {
-        width: 50%;
-    }
+    
+
+    
