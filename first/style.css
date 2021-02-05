@@ -231,6 +231,11 @@
         -o-background-size: cover;
     }
     
+    .responsive {
+        width: 100%;
+        height: auto;
+    }
+    
     header .header-content {
         position: relative;
         width: 100%;
