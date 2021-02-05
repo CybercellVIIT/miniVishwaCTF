@@ -1,37 +1,37 @@
-// (function($) {
-//     "use strict";
+(function($) {
+    "use strict";
 
-//     $('body').scrollspy({
-//         target: '.navbar-fixed-top',
-//         offset: 60
-//     });
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 60
+    });
 
-//     $('#topNav').affix({
-//         offset: {
-//             top: 200
-//         }
-//     });
+    $('#topNav').affix({
+        offset: {
+            top: 200
+        }
+    });
 
-//     new WOW().init();
+    new WOW().init();
 
-//     $('a.page-scroll').bind('click', function(event) {
-//         var $ele = $(this);
-//         $('html, body').stop().animate({
-//             scrollTop: ($($ele.attr('href')).offset().top - 60)
-//         }, 1450, 'easeInOutExpo');
-//         event.preventDefault();
-//     });
+    $('a.page-scroll').bind('click', function(event) {
+        var $ele = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($ele.attr('href')).offset().top - 60)
+        }, 1450, 'easeInOutExpo');
+        event.preventDefault();
+    });
 
-//     $('.navbar-collapse ul li a').click(function() {
-//         /* always close responsive nav after click */
-//         $('.navbar-toggle:visible').click();
-//     });
+    $('.navbar-collapse ul li a').click(function() {
+        /* always close responsive nav after click */
+        $('.navbar-toggle:visible').click();
+    });
 
-//     $('#galleryModal').on('show.bs.modal', function(e) {
-//         $('#galleryImage').attr("src", $(e.relatedTarget).data("src"));
-//     });
+    $('#galleryModal').on('show.bs.modal', function(e) {
+        $('#galleryImage').attr("src", $(e.relatedTarget).data("src"));
+    });
 
-//})(jQuery);
+})(jQuery);
 
 const questions = document.getElementsByClassName('accordion-title') //Gets all the questions (plus icon)
 
