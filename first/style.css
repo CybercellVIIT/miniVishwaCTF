@@ -216,6 +216,9 @@ header {
     background-size: cover;
     -o-background-size: cover;
 }
+.subtitle {
+    color: #fec503;
+}
 .cyber {
     width: 150px;
     height: auto;
@@ -473,6 +476,8 @@ img::-moz-selection {
 .rules {
     text-align: center;
     text-shadow: #004658;
+    font-weight: 600;
+    justify-content: center;
 }
 p {
     text-align: center;
@@ -772,7 +777,7 @@ h1 {
 }
 .maindiv {
     margin: 4rem;
-    background: rgb(216, 206, 206);
+    background: #333;
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 2px 5px 20px #2323235e;
@@ -781,7 +786,7 @@ h1 {
 /*styling main headline of the website*/
 .innerdiv h1 {
     margin: 0.7rem 0 0.4rem;
-    color: #8b0000;
+    color: #333;
 }
 
 /*styling the small flag image in the headline*/
@@ -793,8 +798,11 @@ h1 {
 /*styling the description of the website*/
 .innerdiv p {
     font-size: 1.2rem;
-    color: #4e4b4bf8;
+    color: #333;
     margin-bottom: 1rem;
+}
+.type {
+    color: white;
 }
 
 /*styling the each card*/
@@ -825,14 +833,14 @@ h1 {
 
 /*styling card title*/
 .eachdiv h3 {
-    color: #E91E63;
+    color: #ffd6e4;
     margin-bottom: 0.5rem;
 }
 
 /*styling card description*/
 .eachdiv p {
     font-size: 0.8rem;
-    color: #969696;
+    color: #ffd9d9;
     margin-bottom: 0;
 }
 .footer p {
@@ -901,8 +909,8 @@ h1#footer {
 
 /*Accordion container and each item*/
 .accordion {
-    background-color: rgb(250, 169, 169);
-    color: rgb(9, 160, 140);
+    background-color: rgb(85, 82, 82);
+    color: rgb(60, 250, 225);
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -914,11 +922,11 @@ h1#footer {
 }
 .active,
 .accordion:hover {
-    background-color: rgb(170, 97, 97);
+    background-color: rgb(48, 48, 48);
 }
 .accordion:after {
     content: '\002B';
-    color: rgb(59, 211, 211);
+    color: rgb(97, 247, 247);
     font-weight: bold;
     float: right;
     margin-left: 5px;
@@ -1023,6 +1031,9 @@ p#footer {
     width: 50%;
     height: auto;
     opacity: 70%;
+}
+.eachdiv_font {
+    color: white;
 }
 
 /* @media (min-aspect-ratio: 16/9) {
