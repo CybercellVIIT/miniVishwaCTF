@@ -980,7 +980,7 @@ For small devices*/
     
     .accordion:after {
         content: '\002B';
-        color: #777;
+        color: rgb(29, 163, 163);
         font-weight: bold;
         float: right;
         margin-left: 5px;
@@ -1091,4 +1091,28 @@ For small devices*/
     
     .vid {
         width: 50%;
+        opacity: 70%;
     }
+    /* @media (min-aspect-ratio: 16/9) {
+        #videoBG {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    @media (max-aspect-ratio: 16/9) {
+        #videoBG {
+            width: auto;
+            height: 100%;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        #videoBG {
+            display: none;
+        }
+        body {
+            background: url('poster.jpg');
+            background-size: cover;
+        }
+    } */
