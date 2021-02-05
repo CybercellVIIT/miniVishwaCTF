@@ -228,8 +228,8 @@ header {
 }
 .presents {
     float: center;
-    font-size: xx-large;
-    color: #ffffff;
+    font-size: x-large;
+    color: #f3f704;
 }
 .responsive {
     width: 70%;
