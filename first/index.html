@@ -24,6 +24,7 @@
 <body>
 
 
+
     <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -71,11 +72,32 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+    <script>
+        $(function() {
+            $('a.page-scroll').bind('click', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
+        });
+
+        // Highlight the top nav as scrolling occurs
+        $('body').scrollspy({
+            target: '.navbar-fixed-top'
+        })
+
+        // Closes the Responsive Menu on Menu Item Click
+        $('.navbar-collapse ul li a').click(function() {
+            $('.navbar-toggle:visible').click();
+        });
+    </script>
 
     <header id="first">
         <div class="header-content">
             <div class="inner">
-                <img src="cybercell_logo.png" alt="cybercell logo" class="cyber">
+                <img src="cybercell.png" alt="cybercell logo" class="cyber">
 
                 <p class="presents">Presents</p>
                 <img src="logo.png" alt="VishwaCTF-Mini" class="responsive">
@@ -196,6 +218,7 @@
 
     </div>
     <div class="container">
+        <br>
 
         <h2>FAQ</h2>
         <div id="five">
@@ -237,6 +260,7 @@
             </script>
         </div>
     </div>
+    <br>
 
     <!-- footer -->
 
