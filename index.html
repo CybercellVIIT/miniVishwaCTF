@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-68DEWZEGKD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-68DEWZEGKD');
+</script>
     <meta charset="utf-8">
     <title>VishwaCTF-Mini</title>
     <meta name="description" content="A CTF DESIGNED BY THE STUDENTS OF CYBERCELL VIIT" />
@@ -13,8 +22,8 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
     <!-- Bootstrap -->
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
@@ -73,34 +82,14 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <script>
-        $(function() {
-            $('a.page-scroll').bind('click', function(event) {
-                var $anchor = $(this);
-                $('html, body').stop().animate({
-                    scrollTop: $($anchor.attr('href')).offset().top
-                }, 1500, 'easeInOutExpo');
-                event.preventDefault();
-            });
-        });
-
-        // Highlight the top nav as scrolling occurs
-        $('body').scrollspy({
-            target: '.navbar-fixed-top'
-        })
-
-        // Closes the Responsive Menu on Menu Item Click
-        $('.navbar-collapse ul li a').click(function() {
-            $('.navbar-toggle:visible').click();
-        });
-    </script>
+   
 
     <header id="first">
         <div class="header-content">
             <div class="inner">
                 <img src="cybercell.png" alt="cybercell logo" class="cyber">
 
-                <h3 class="presents"><strong>Presents</strong></h3>
+                <div class="presents">presents</div>
                 <img src="logo.png" alt="VishwaCTF-Mini" class="responsive">
                 <hr class="firstHr">
                 <div class="bothButtons">
@@ -273,12 +262,17 @@
 
     <footer id="contact" class="footer-distributed">
         <h2 id="footer">Contact Us</h2>
-        <p id="footer">Submit your writeups on our GitHub page</p>
         <div class="footer-right">
+        <a href="https://www.instagram.com/cybercell_viit/"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com/cybercellviit?lang=en"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/cybercell_viit/"><i class="fa fa-linkedin"></i></a>
+        
 
-            <a href="https://www.instagram.com/cybercell_viit/"><i class="fa fa-instagram"></i></a>
-            <a href="https://twitter.com/cybercellviit?lang=en"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.instagram.com/cybercell_viit/"><i class="fa fa-linkedin"></i></a>
+    </div>
+    <p id="footer">Submit your writeups on our GitHub page</p>
+        <div class="footer-right-1">
+
+            
             <a href="https://github.com/CyberCell-Viit"><i class="fa fa-github"></i></a>
 
         </div>
@@ -293,6 +287,27 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     
-</body>
 
+    <script>
+        $(function() {
+            $('a.page-scroll').bind('click', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
+        });
+
+        // Highlight the top nav as scrolling occurs
+        $('body').scrollspy({
+            target: '.navbar-fixed-top'
+        })
+
+        // Closes the Responsive Menu on Menu Item Click
+        $('.navbar-collapse ul li a').click(function() {
+            $('.navbar-toggle:visible').click();
+        });
+    </script> 
+</body>
 </html>
