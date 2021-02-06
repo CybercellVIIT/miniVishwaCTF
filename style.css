@@ -165,7 +165,6 @@ footer {
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    width: 100vw;
     background-color: #1ee2e7;
 }
 .navbar-default .navbar-nav>.active>a:hover,
@@ -1090,6 +1089,12 @@ h1#footer {
     }
     .accordion{
         font-size: 20px;
+    }
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 0;
+        color: #fff;
+        width: 100vw;
+        background-color: #1ee2e7;
     }
 }
 
