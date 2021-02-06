@@ -622,7 +622,7 @@ h1 {
 }
 .footer-social-links {
     bottom: 0;
-    height: 54px;
+    height: 100px;
     position: absolute;
     right: 0;
     width: 236px;
@@ -648,6 +648,7 @@ h1 {
     display: block;
     padding: 10px;
     position: absolute;
+     
 }
 .hidden-link-text {
     position: absolute;
@@ -676,7 +677,7 @@ h1 {
     width: 50px;
 }
 .footer-social-link.youtube {
-    height: 24px;
+    height: 30px;
     left: -147%;
     top: -104%;
     width: 50px;
@@ -932,9 +933,9 @@ h1#footer {
     float: right;
     margin-left: 5px;
 }
-.active:after {
+/* .active:after {
     content: "\2212";
-}
+} */
 .panel {
     padding: 0 18px;
     background-color: rgb(68, 68, 68);
