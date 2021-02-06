@@ -986,8 +986,9 @@ h1#footer {
     /* float: right; */
     
     margin-top: 6px;
-    margin-left: 45%;
-     
+    margin-left: auto;
+    margin-right: auto;
+    
     max-width: 180px;
 }
 .footer-distributed .footer-right a {
@@ -1099,12 +1100,12 @@ h1#footer {
 }
 
 p#footer {
-    position: absolute;
+    /* position: absolute;
     display: block;
-    width:80%;
+    width:80%; */
     text-align: center;
-    margin-left: 6%;
-    margin-top: 1%;
+    /* margin-left: 6%;
+    margin-top: 1%; */
 }
 
 /* .vid {
@@ -1160,8 +1161,8 @@ p#footer {
         }
     } */
 
-    .footer-right-1 {
-        /* float: right; */
+    /* .footer-right-1 {
+        float: right; 
         position: relative;
         display: inline;
        
@@ -1196,4 +1197,4 @@ p#footer {
     .footer-distributed .footer-right-1 {
         float: none;
         margin: 0 auto 20px;
-    }
+    } */
