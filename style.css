@@ -6,27 +6,48 @@
 
 html,
 body {
-    width: 100%;
+    width: 99%;
     height: 100%;
+    /* overflow-x: hidden; */
+   
 }
 
 body {
     font-family: 'Questrial', 'Helvetica Neue', Arial, sans-serif;
-    background-color: #282828;
+    /* background-color: transparent; */
     color: #d3d3d3;
+    background-color: black!important;
     -webkit-tap-highlight-color: #222;
-    scroll-behavior: smooth;
-    !important display: block;
+    scroll-behavior: smooth !important;
+     display: block;
     align-items: center;
     justify-content: center;
+    background-image: url('flagbg.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: 0vh;
+}
+
+.ctfDate{
+    font-size: 45px;
+    color: #eee;
+}
+
+.countdown  {
+    /* background-color: rgb(67, 207, 241, 0.5); */
+    font-size: 20px;
+    margin-bottom: 2vh;
+    max-width: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    letter-spacing: 3px;
 }
 
 hr {
-    max-width: 80px;
-    border-width: 3px;
-    opacity: 0.09;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    display: none;
 }
 
 hr.light {
@@ -82,6 +103,7 @@ p {
 
 .bg-primary {
     background-color: #333;
+    border-radius: 15px;
 }
 
 .bg-dark {
@@ -128,7 +150,7 @@ footer {
 }
 
 #first {
-    background-color: black;
+    background-color: transparent;
 }
 
 .header-content {
@@ -137,11 +159,11 @@ footer {
     left: 4px;
     width: 70px;
     background-position: center;
-    background-image: url(/thumbnail.png);
+    /* background-image: url(/thumbnail.png); */
 }
 
 @media (min-width:768px) {
-    background-image: opacity: 1.5;
+    /* background-image: opacity: 1.5; */
 }
 
 #five {
@@ -247,7 +269,7 @@ header {
     text-align: center;
     color: #fff;
     width: 100%;
-    background-color: #0f0f0f;
+    /* background-color: transparent; */
     /* background-image: url('https://splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-Slate-Stone-Xeromatic-1440x953.jpg'); */
     background-position: center;
     -webkit-background-size: cover;
@@ -299,7 +321,7 @@ header .header-content .inner p {
 }
 
 footer {
-    background-color: #2d2d2d;
+    background-color: transparent;
 }
 
 @media(min-width:768px) {
@@ -312,6 +334,7 @@ footer {
     header .header-content {
         position: absolute;
         top: 50%;
+        padding-bottom: 40px !important;
         padding: 0 50px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -826,6 +849,14 @@ h1 {
 
 @media (min-width:320px) and (max-width:479px) {
     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    .body{
+        background-image: url('flagbg.jpg')!important;
+        background-size: cover !important; 
+        background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
+        background-position-x: center !important;
+        background-position-y: 0vh!important;
+    }
     .footer-content {
         margin-left: auto;
         margin-right: auto;
@@ -857,17 +888,6 @@ h1 {
     }
 }
 
-@media (min-width:801px) {
-    /* tablet, landscape iPad, lo-res laptops ands desktops */
-}
-
-@media (min-width:1025px) {
-    /* big landscape tablets, laptops, and desktops */
-}
-
-@media (min-width:1281px) {
-    /* hi-res laptops and desktops */
-}
 
 @media (min-width: 760px) {
     .footer-content {
@@ -883,12 +903,6 @@ h1 {
     .footer-content-column {
         width: 24.99%;
     }
-}
-
-@media (min-width: 568px) {
-    /* .footer-content-column {
-        width: 49.99%;
-    } */
 }
 
 .maindiv {
@@ -1008,8 +1022,16 @@ For medium screen devices*/
 For small devices*/
 
 @media only screen and (max-width: 600px) {
+    .body{
+        background-image: url('flagbg.jpg')!important;
+        background-size: cover !important; 
+        background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
+        background-position-x: center !important;
+        background-position-y: 0vh!important;
+    }
     .maindiv {
-        margin: 2rem;
+        margin: 0rem;
     }
     .eachdiv {
         width: 100%;
@@ -1099,7 +1121,7 @@ h1#footer {
 /* footer */
 
 .footer-distributed {
-    background-color: #292c2f;
+    background-color: transparent;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
@@ -1193,18 +1215,21 @@ h1#footer {
         line-height: 1.8;
     }
 } */
-.countdown  {
-    /* background-color: rgb(67, 207, 241, 0.5); */
-    font-size: 50px;
-    margin-bottom: 10vh;
-    max-width: 70vh;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 700;
 
-}
 
 @media (max-width: 600px) {
+    .body{
+        background-image: url('flagbg.jpg')!important;
+        background-size: cover !important; 
+        background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
+        background-position-x: center !important;
+        background-position-y: 0vh!important;
+    }
+    .ctfDate{
+        font-size: 35px;
+        color: #eee;
+    }
     .footer-distributed .footer-left,
     .footer-distributed .footer-right {
         text-align: center;
@@ -1222,8 +1247,12 @@ h1#footer {
         display: none;
         background-color: #0f0f0f;
     }
+    .countdown{
+        font-size: 20px;
+
+    }
     .bothButtons {
-        margin-top: 50px;
+        margin-top: 35px;
         padding-bottom: 75px;
     }
     .cyber {
@@ -1245,6 +1274,7 @@ h1#footer {
     .header-content {
         position: relative !important;
         height: 100vh;
+        margin-bottom: 15px;
         padding: 100px 15px 0px 15px !important;
     }
     .firstHr {
@@ -1283,25 +1313,7 @@ p#footer {
 }
 
 
-/* .vid {
-    width: 50%;
-    height: auto;
-    opacity: 70%;
-} */
 
-@media (min-aspect-ratio: 16/9) {
-    #vid {
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    #vid {
-        width: auto;
-        height: 100%;
-    }
-}
 
 @media (max-width: 560px) {
     header {
@@ -1313,67 +1325,3 @@ p#footer {
 .eachdiv_font {
     color: white;
 }
-
-
-/* @media (min-aspect-ratio: 16/9) {
-        #videoBG {
-            width: 100%;
-            height: auto;
-        }
-    }
-    
-    @media (max-aspect-ratio: 16/9) {
-        #videoBG {
-            width: auto;
-            height: 100%;
-        }
-    }
-    
-    @media (max-width: 767px) {
-        #videoBG {
-            display: none;
-        }
-        body {
-            background: url('poster.jpg');
-            background-size: cover;
-        }
-    } */
-
-
-/* .footer-right-1 {
-        float: right; 
-        position: relative;
-        display: inline;
-       
-        left:58%;
-        top:80%;
-        max-width: 180px;
-    }
-
-    .footer-right-1 a {
-        display: inline-block;
-        width: 35px;
-        height: 35px;
-        background-color: #33383b;
-        border-radius: 2px;
-        font-size: 20px;
-        color: #ffffff;
-        text-align: center;
-        line-height: 35px;
-        margin-left: 8%;
-        margin-top:5px;
-        transition: all .25s;
-    }
-
-    .footer-right-1 a:hover {
-        transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-    }
-
-    .footer-right-1 {
-        text-align: center;
-    }
-    .footer-distributed .footer-right-1 {
-        float: none;
-        margin: 0 auto 20px;
-    } */
