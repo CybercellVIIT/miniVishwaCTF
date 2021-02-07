@@ -1193,6 +1193,16 @@ h1#footer {
         line-height: 1.8;
     }
 } */
+.countdown  {
+    /* background-color: rgb(67, 207, 241, 0.5); */
+    font-size: 50px;
+    margin-bottom: 10vh;
+    max-width: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+
+}
 
 @media (max-width: 600px) {
     .footer-distributed .footer-left,
