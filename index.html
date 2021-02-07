@@ -96,7 +96,7 @@
 
                 <div class="presents">PRESENTS</div>
                 <img src="Large Mini.png" alt="VishwaCTF-Mini" class="responsive">
-                <hr class="firstHr">
+                <div class="ctfDate">13th-14th Feb'21</div>
                 <div class="countdown" id="demo">
                 </div>
                 <script>
@@ -119,8 +119,8 @@
                         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
                         // Output the result in an element with id="demo"
-                        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-                            + minutes + "m " + seconds + "s ";
+                        document.getElementById("demo").innerHTML = days + "d :" + hours + "h :"
+                            + minutes + "m :" + seconds + "s ";
 
                         // If the count down is over, write some text 
                         if (distance < 0) {
@@ -129,6 +129,7 @@
                         }
                     }, 1000);
                 </script>
+                
                 <div class="bothButtons">
                     <a href="#" class="btn btn-primary btn-xl registerNow">Register Now!</a> &nbsp;
                     <a href="https://discord.gg/AcTKfdv4fa" class="btn btn-primary btn-xl page-scroll registerNow">Join
