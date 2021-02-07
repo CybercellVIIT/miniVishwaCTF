@@ -140,6 +140,10 @@ footer {
     background-image: url(/thumbnail.png);
 }
 
+@media (min-width:768px) {
+    background-image: opacity: 1.5;
+}
+
 #five {
     padding-top: 50px;
 }
