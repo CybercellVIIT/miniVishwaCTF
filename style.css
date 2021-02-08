@@ -158,7 +158,6 @@ footer {
     left: 4px;
     width: 70px;
     background-position: center;
-    background-image: url(/bgimg.jpg);
 }
 
 @media (min-width:768px) {
