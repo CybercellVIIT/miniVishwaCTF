@@ -34,6 +34,14 @@ body {
     color: #eee;
 }
 
+.major-points{
+    font-family: 'Questrial', 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    color: rgba(75, 255, 4, 0.993) !important;
+    font-weight: 700;
+    text-shadow: #082b34;
+}
+
 .countdown {
     /* background-color: rgb(67, 207, 241, 0.5); */
     font-size: 20px;
