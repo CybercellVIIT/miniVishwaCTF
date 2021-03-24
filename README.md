@@ -1,4 +1,6 @@
-# miniVishwaCTF
+<img src="https://github.com/CybercellVIIT/miniVishwaCTF/blob/master/Large%20Mini.png">
+
+# VishwaCTF-Mini
 Repo for collaboration on VishwaCTF-Mini's webpage.
 
 ## Hosted at : 
